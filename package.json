@@ -1,0 +1,35 @@
+{
+  "name": "vserv",
+  "version": "1.0.0",
+  "date": "25.01.17",
+  "type": "module",
+  "main": "./server/index.js",
+  "exports": "./server/index.js",
+  "bin": {
+    "vserv": "bin/vserv.js"
+  },
+  "author": "llcawc",
+  "license": "MIT",
+  "homepage": "https://github.com/llcawc/vserv",
+  "description": "Static server for local development based vite",
+  "scripts": {
+    "tsc": "tsc",
+    "make": "nodemon -e ts -x tsc -w ./source",
+    "dev": "node ./server/servite dev -p 3000",
+    "serve": "node ./server/servite serve -p 3000",
+    "build": "node ./server/servite build -f ./src/index.html ./src/404.html ./src/scripts/main.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.6",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2",
+    "prettier-plugin-embed": "^0.4.15",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "sass": "^1.83.4",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "commander": "^13.0.0",
+    "vite": "^6.0.7"
+  }
+}
