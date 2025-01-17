@@ -38,6 +38,17 @@ h2,
 h3 {
   color: var(--color-header);
   margin-bottom: calc(var(--space) * 4);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: calc(var(--space) * 10);
+}
+
+p {
+  font-size: inherit;
+  line-height: inherit;
+  margin-bottom: calc(var(--space) * 4);
 }
 
 a,
@@ -72,13 +83,18 @@ a:hover {
   }
 }
 
-.mb-4 {
-  margin-bottom: calc(var(--space) * 4);
-}
-
 .error {
-  height: calc(100svh - 40px);
+  height: calc(100svh - var(--space) * 10);
+  padding-bottom: calc(var(--space) * 20);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.e404 {
+  display: flex;
+  gap: calc(var(--space) * 6);
+  & h1 {
+    font-size: calc(var(--space) * 12);
+    line-height: 1;
+  }
 }

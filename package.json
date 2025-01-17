@@ -1,6 +1,6 @@
 {
   "name": "vserv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "date": "25.01.17",
   "type": "module",
   "main": "./server/index.js",
@@ -15,9 +15,9 @@
   "scripts": {
     "tsc": "tsc",
     "make": "nodemon -e ts -x tsc -w ./source",
-    "dev": "node ./server/servite dev -p 3000",
-    "serve": "node ./server/servite serve -p 3000",
-    "build": "node ./server/servite build -f ./src/index.html ./src/404.html ./src/scripts/main.ts"
+    "dev": "node ./server/comm dev -p 3000",
+    "serve": "node ./server/comm serve -p 3000",
+    "build": "node ./server/comm build -f ./src/index.html ./src/404.html ./src/scripts/main.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.6",
